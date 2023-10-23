@@ -2,26 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer utilities {
+  .pause {
+    animation-play-state: paused;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  .img-middle {
+    transform: translateX(0px) translateY(-40px) scale(1) rotate(0deg) translateZ(0px)
+  }
+
+  .img-slide-left {
+    transform: translateX(420px) translateY(45px) scale(1) rotate(0deg) translateZ(0px)
+  }
+
+  .img-slide-left-2 {
+    transform: translateX(510px) translateY(50px) scale(1) rotate(0deg) translateZ(0px);
+  }
+
+  .img-slide-right {
+    transform: translateX(-400px) translateY(35px) scale(1) rotate(0deg) translateZ(0px)
+  }
+
+  .img-slide-right-2 {
+    transform: translateX(-485px) translateY(40px) scale(1) rotate(0deg) translateZ(0px);
+  }
+
+  .bg-about {
+    background-image: url("../assets/png/background.jpg");
+  }
+
+  .bg-about-data {
+    background-image: url("../assets/png/backgroundBlue.png");
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: "Inter";
+  src: url("../../public/Inter/Inter.ttf") format("ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.swiper-slide {
+  width: auto !important;
+  height: 250px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-bottom: 5rem !important;
 }
