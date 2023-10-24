@@ -28,7 +28,7 @@ export default function Hero() {
           size="xlg"
           rounded="xl"
           color="secondary"
-          className="text-lg"
+          className="text-xl md:text-2xl min-w-fit "
           href="https://dashboard.rizerapps.com/login"
         />
         <Animation />

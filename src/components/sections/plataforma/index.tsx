@@ -122,7 +122,7 @@ export default function About() {
         size="xlg"
         rounded="xl"
         color="secondary"
-        className="text-lg"
+        className="text-xl md:text-2xl"
         href="https://rizer.com.br/primeiros-passos"
       />
     </Section>

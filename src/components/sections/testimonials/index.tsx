@@ -16,7 +16,7 @@ export default function Testimonials() {
         </hgroup>
       </header>
       <div className="  overflow-hidden w-full   ">
-        <div className=" group gap-0 relative flex items-center justify-center overflow-hidden w-full select-none ">
+        <menu className=" group gap-0 relative flex items-center justify-center overflow-hidden w-full select-none ">
           <ul role="marquee"  className=" animate-scroll group-hover:pause flex justify-around gap-0  min-w-fit flex-shrink-0">
             {DataTestimonial.map((data, i) => (
               <Card
@@ -37,8 +37,18 @@ export default function Testimonials() {
               />
             ))}
           </ul>
-        </div>
-        <div className=" group gap-0 relative flex  items-center justify-center overflow-hidden w-full select-none ">
+          <ul role="marquee" className=" animate-scroll group-hover:pause flex justify-around gap-0  min-w-fit flex-shrink-0">
+            {DataTestimonial.map((data, i) => (
+              <Card
+                key={i}
+                ocupacao={data.role}
+                name={data.nome}
+                text={data.description}
+              />
+            ))}
+          </ul>
+        </menu>
+        <menu className=" group gap-0 relative flex  items-center justify-center overflow-hidden w-full select-none ">
           <ul role="marquee" className="  animate-scroll_reverse  group-hover:pause flex justify-around gap-0  min-w-fit flex-shrink-0">
             {DataTestimonial.map((data, i) => (
               <Card
@@ -69,8 +79,8 @@ export default function Testimonials() {
               />
             ))}
           </ul>
-        </div>
-        <div className="group gap-0 relative flex items-center justify-center overflow-hidden w-full select-none ">
+        </menu>
+        <menu className="group gap-0 relative flex items-center justify-center overflow-hidden w-full select-none ">
           <ul role="marquee" className=" animate-scroll group-hover:pause flex justify-around gap-0  min-w-fit flex-shrink-0">
             {DataTestimonial.map((data, i) => (
               <Card
@@ -101,7 +111,7 @@ export default function Testimonials() {
               />
             ))}
           </ul>
-        </div>
+        </menu>
       </div>
     </Section>
   );

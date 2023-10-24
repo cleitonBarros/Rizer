@@ -14,7 +14,7 @@ export type ButtonProps = ComponentProps<"div"> &
     button?: boolean;
     hidden?: boolean;
     icon?: JSX.Element;
-    href?:string
+    href?: string;
   };
 
 const card = tv({
@@ -57,7 +57,14 @@ export function Card({
       )}
       {icon}
       {button && (
-        <Button text="criar conta" href={href} size="md" rounded="lg" color="secondary" />
+        <Button
+          text="criar conta"
+          href={href}
+          size="xlg"
+          rounded="lg"
+          className="text-xl md:text-2xl "
+          color="secondary"
+        />
       )}
       {props.children}
     </div>

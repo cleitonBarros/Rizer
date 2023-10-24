@@ -31,9 +31,9 @@ export default function Card({
       <header className="w-auto flex flex-col gap-8 ">
         <Image src={src} alt={alt} className="w-12 h-10 " />
         <span className=" w-12 h-1 bg-green-light"></span>
-        <h4 className=" text-2xl font-onest font-semibold text-white tracking-wider">
+        <h2 className=" text-2xl font-onest font-semibold text-white tracking-wider">
           {title}
-        </h4>
+        </h2>
       </header>
       <p className=" text-xl font-inter font-normal  text-slate-300 tracking-wider">
         {text}

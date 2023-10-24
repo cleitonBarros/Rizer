@@ -1,6 +1,5 @@
 import Section from "../../container";
 import { BiGitCommit, BiCheck } from "react-icons/bi";
-import Image from "next/image";
 import Button from "@/components/button";
 
 export default function Planos() {

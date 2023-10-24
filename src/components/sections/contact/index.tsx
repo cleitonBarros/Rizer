@@ -13,7 +13,7 @@ export default function Contact() {
           text="Falar com um consultor"
           color="primary"
           size="xlg"
-          className="text-lg font-fredoka"
+          className="text-xl md:text-2xl min-w-fit "
           aria-label="clique para falar com um consultor"
           href="https://web.whatsapp.com/send/?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20da%20Rizer!"
         />

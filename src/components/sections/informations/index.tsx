@@ -30,7 +30,7 @@ export default function Information() {
             Não precisa saber programar !
           </span>
           <Button
-            className="text-xl"
+            className="text=xl md:text-2xl min-w-fit "
             rounded="xl"
             size="xlg"
             text="Criar projeto"
@@ -127,7 +127,7 @@ export default function Information() {
           ></track>
         </video>
 
-        <Button size="xlg" color="primary" text="Ir aos primeiros passos" />
+        <Button size="xlg" color="primary" text="Ir aos primeiros passos"   className="text-xl md:text-2xl min-w-fit "/>
       </article>
       <article className=" flex justify-center items-center flex-col w-full max-w-screen-2xl  select-none gap-20">
         <hgroup className=" max-w-[910px]">
