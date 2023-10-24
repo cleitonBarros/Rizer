@@ -1,4 +1,3 @@
-import Link from "next/link";
 import academia from "../../../assets/png/academia.png";
 import apertoDeMao from "../../../assets/png/aperto-de-mao.png";
 import caixaEletronico from "../../../assets/png/caixa-eletronico.png";
@@ -12,11 +11,16 @@ import petshop from "../../../assets/png/petshop.png";
 import Section from "../../container";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Templates() {
   return (
     <>
-      <Section backgroundColor="primary" className=" pb-7.5 pt-6.25" id="templates">
+      <Section
+        backgroundColor="primary"
+        className=" pb-7.5 pt-6.25"
+        id="templates"
+      >
         <header className="mx-auto  max-w-[910px]">
           <hgroup>
             <h2 className="lg:leading-[60px] text-center text-3xl md:text-4xl lg:text-5xl font-suisse text-white font-semibold mx-auto">

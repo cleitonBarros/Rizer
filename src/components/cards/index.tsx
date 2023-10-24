@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { ComponentProps } from "react";
-import Image from "next/image";
 
 import Button from "../button";
 
+import Image from "next/image";
 import { VariantProps, tv } from "tailwind-variants";
 
 export type ButtonProps = ComponentProps<"div"> &

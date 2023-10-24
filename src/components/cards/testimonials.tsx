@@ -1,4 +1,5 @@
 import { ComponentProps } from "react";
+
 import { VariantProps, tv } from "tailwind-variants";
 
 const card = tv({
@@ -11,7 +12,7 @@ export type CardProps = ComponentProps<"div"> &
     ocupacao?: string;
   };
 
-export function Card({ name, ocupacao, text, className, ...props }: CardProps) {
+export function Card({ name, ocupacao, text, ...props }: CardProps) {
   return (
     <ul>
       <li className=" flex-[0_0_auto] text-rizer-900 text-2xl  font-semibold m-1 py-1 px-1  ">

@@ -1,6 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { ComponentProps } from "react";
-import { VariantProps, tv } from "tailwind-variants";
+
 import Image from "next/image";
+import { VariantProps, tv } from "tailwind-variants";
 
 const card = tv({
   base: "rounded-2xl bg-rizer-800 flex flex-col justify-start items-start w-full h-auto  px-10 py-16 gap-10"

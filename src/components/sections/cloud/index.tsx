@@ -22,10 +22,10 @@ export default function Cloud() {
           <div className=" flex items-center justify-items-center max-w-[910px]">
             <ul className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 justify-items-center">
               <li className=" w-32  md:w-auto md:col-span-1 flex justify-center items-center  ">
-                <Image   src={amazon} alt="logo da amazon aws" />
+                <Image src={amazon} alt="logo da amazon aws" />
               </li>
               <li className=" w-36 md:w-auto md:col-span-1  flex justify-end items-center  ">
-                <Image  src={google} alt="logo da google clound" />
+                <Image src={google} alt="logo da google clound" />
               </li>
               <li className=" w-32  md:w-auto md:col-span-1  flex justify-end items-center  ">
                 <Image src={ocean} alt="logo da digital ocean" />

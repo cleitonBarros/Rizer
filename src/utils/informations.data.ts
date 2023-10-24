@@ -44,5 +44,5 @@ export const DataInformation = [
     alt: "imagem de uma paleta de cores",
     text: "Escolha dentre diversos templates de design e paletas de cores, para deixar o seu sistema com a sua cara.",
     link: "Ver mais"
-  },
+  }
 ];

@@ -1,22 +1,19 @@
-import cliente from "../../../assets/png/clientes.png";
+import Education from "../../../assets/png/education.jpg";
+import Saude from "../../../assets/png/estetoscopio.jpg";
+import Logistic from "../../../assets/png/logistic.jpg";
+import services from "../../../assets/png/services.jpg";
+import TI from "../../../assets/png/TI.jpg";
+import varejo from "../../../assets/png/varejo.jpg";
 import mobile_desktop from "../../../assets/svg/desktop-e-mobile.svg";
-
 import design from "../../../assets/svg/gerador-online.svg";
 import user from "../../../assets/svg/gerenciamento-de-usuario.svg";
 import apis from "../../../assets/svg/integracao-de-api-externa.svg";
 import no_Code from "../../../assets/svg/plataforma-no-code.svg";
 import backup from "../../../assets/svg/Vector.svg";
 import Button from "../../button";
-import Section from "../../container";
-import Card from "../../cards/informations";
 import CardClient from "../../cards/clientes";
-
-import TI from "../../../assets/png/TI.jpg";
-import Logistic from "../../../assets/png/logistic.jpg";
-import Education from "../../../assets/png/education.jpg";
-import varejo from "../../../assets/png/varejo.jpg";
-import Saude from "../../../assets/png/estetoscopio.jpg";
-import services from "../../../assets/png/services.jpg";
+import Card from "../../cards/informations";
+import Section from "../../container";
 
 export default function Information() {
   return (
@@ -127,7 +124,12 @@ export default function Information() {
           ></track>
         </video>
 
-        <Button size="xlg" color="primary" text="Ir aos primeiros passos"   className="text-xl md:text-2xl min-w-fit "/>
+        <Button
+          size="xlg"
+          color="primary"
+          text="Ir aos primeiros passos"
+          className="text-xl md:text-2xl min-w-fit "
+        />
       </article>
       <article className=" flex justify-center items-center flex-col w-full max-w-screen-2xl  select-none gap-20">
         <hgroup className=" max-w-[910px]">

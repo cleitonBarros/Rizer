@@ -1,7 +1,8 @@
 import image_02 from "../../../assets/svg/briefcase.svg";
 import image_01 from "../../../assets/svg/eye.svg";
-import Image from "next/image"
 import Section from "../../container";
+
+import Image from "next/image";
 
 export default function AboutUs() {
   return (

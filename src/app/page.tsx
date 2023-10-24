@@ -3,16 +3,16 @@ import { BsWhatsapp } from "react-icons/bs";
 import Button from "../components/button";
 import Footer from "../components/footer";
 import Header from "../components/header";
+import AboutUs from "../components/sections/aboutUs";
 import Cloud from "../components/sections/cloud";
 import Contact from "../components/sections/contact";
+import Hero from "../components/sections/hero";
+import Information from "../components/sections/informations";
 import Integration from "../components/sections/integration";
+import Planos from "../components/sections/planos";
+import About from "../components/sections/plataforma";
 import Templates from "../components/sections/templates";
 import Testimonials from "../components/sections/testimonials";
-import Information from "../components/sections/informations";
-import  AboutUs  from "../components/sections/aboutUs";
-import About from "../components/sections/plataforma";
-import Hero from "../components/sections/hero";
-import Planos from "../components/sections/planos";
 
 export default function Home() {
   return (
@@ -33,7 +33,7 @@ export default function Home() {
       <Footer />
       <Button
         className="fixed right-4 bottom-4 z-10"
-        icon={<BsWhatsapp  size={40}/>}
+        icon={<BsWhatsapp size={40} />}
         size="null"
         rounded="xl"
         color="primary"

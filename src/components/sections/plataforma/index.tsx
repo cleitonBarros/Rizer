@@ -1,12 +1,13 @@
+import { BsArrowReturnRight } from "react-icons/bs";
+import { FaMicrophone } from "react-icons/fa";
+import { PiUserCirclePlusLight } from "react-icons/pi";
+
 import { Card } from "@/components/cards";
+
 import image_03 from "../../../assets/png/image 2.png";
 import image_01 from "../../../assets/svg/chatgpt-icon 1.svg";
 import Button from "../../button";
-
 import Section from "../../container";
-import { BsArrowReturnRight } from "react-icons/bs";
-import { PiUserCirclePlusLight } from "react-icons/pi";
-import { FaMicrophone } from "react-icons/fa";
 
 export default function About() {
   return (

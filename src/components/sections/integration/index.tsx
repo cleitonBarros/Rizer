@@ -68,7 +68,11 @@ export default function Integration() {
           <p className="absolute  bottom-0 left-0 py-1 px-8 text-xl font-fredoka font-semibold bg-rizer-800 text-white rounded-e-2xl ">
             Slack
           </p>
-          <Image className=" w-36  md:w-56" src={slack} alt="logo da plataforma slack" />
+          <Image
+            className=" w-36  md:w-56"
+            src={slack}
+            alt="logo da plataforma slack"
+          />
         </SwiperSlide>
         <SwiperSlide className=" rounded-2xl ">
           <p className="absolute  bottom-0 left-0 py-1 px-8 text-xl font-fredoka font-semibold bg-rizer-800 text-white rounded-e-2xl ">
@@ -90,13 +94,21 @@ export default function Integration() {
           <p className="absolute  bottom-0 left-0 py-1 px-8 text-xl font-fredoka font-semibold bg-rizer-800 text-white rounded-e-2xl ">
             Whatapp
           </p>
-          <Image className=" w-36  md:w-56" src={whatsapp} alt="logo do whatsapp" />
+          <Image
+            className=" w-36  md:w-56"
+            src={whatsapp}
+            alt="logo do whatsapp"
+          />
         </SwiperSlide>
         <SwiperSlide className=" rounded-2xl ">
           <p className="absolute  bottom-0 left-0 py-1 px-8 text-xl font-fredoka font-semibold bg-rizer-800 text-white rounded-e-2xl ">
             Google Maps
           </p>
-          <Image className=" w-36  md:w-56" src={googleMaps} alt="icone google maps" />
+          <Image
+            className=" w-36  md:w-56"
+            src={googleMaps}
+            alt="icone google maps"
+          />
         </SwiperSlide>
         <SwiperSlide className=" rounded-2xl ">
           <p className="absolute  bottom-0 left-0 py-1 px-8 text-xl font-fredoka font-semibold bg-rizer-800 text-white rounded-e-2xl ">

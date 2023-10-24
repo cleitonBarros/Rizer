@@ -1,8 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import { useEffect, useRef } from "react";
+
 import image_01 from "../../../assets/png/image_01.webp";
 import image_02 from "../../../assets/png/image_02.webp";
 import image_03 from "../../../assets/png/image_03.webp";
+
 import Image from "next/image";
 
 export default function Animation() {

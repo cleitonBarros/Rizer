@@ -1,5 +1,4 @@
 export const DataTestimonial = [
-  
   {
     nome: "Thiago Freitas",
     role: "Desenvolvedor Freelancer",
