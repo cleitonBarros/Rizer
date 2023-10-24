@@ -9,11 +9,11 @@ import image_03 from "../../../assets/png/image_03.webp";
 import Image from "next/image";
 
 export default function Animation() {
-  const refMiddleImage = useRef<any>(""),
-    redLeftImage = useRef<any>(""),
-    redRightImage = useRef<any>(""),
-    redLeftImage2 = useRef<any>(""),
-    redRightImage2 = useRef<any>("");
+  const refMiddleImage = useRef<HTMLImageElement>(null!),
+    redLeftImage = useRef<HTMLImageElement>(null!),
+    redRightImage = useRef<HTMLImageElement>(null!),
+    redLeftImage2 = useRef<HTMLImageElement>(null!),
+    redRightImage2 = useRef<HTMLImageElement>(null!);
 
   useEffect(() => {
     refMiddleImage.current.classList.add("img-middle");
@@ -28,39 +28,39 @@ export default function Animation() {
       <div className=" group flex flex-col relative h-auto">
         <div
           ref={refMiddleImage}
-          className="img-cental  transition-all duration-1000"
+          className="img-cental  transition-all duration-300"
         >
           <figure className="mx-auto">
             <Image
               src={image_02}
-              alt="algo"
+              alt="imagem da pagina completa"
               className="h-auto mx-auto max-w-full xl:max-w-screen-md 2xl:max-w-[52rem]"
             />
           </figure>
         </div>
         <figure
           ref={redLeftImage}
-          className=" absolute -top-3  right-0 bottom-0 left-0 mx-auto hidden xl:block xl:max-w-[440px] 2xl:hidden 2xl:max-w-[600px] transition"
+          className=" absolute -top-3  right-0 bottom-0 left-0 mx-auto hidden xl:block xl:max-w-[440px] 2xl:hidden 2xl:max-w-[600px] transition-all duration-300"
         >
-          <Image src={image_01} alt="algo" className="w-full" />
+          <Image src={image_01} alt="imagem da pagina " className="w-full" />
         </figure>
         <figure
           ref={redRightImage}
-          className=" absolute top-0 right-0 bottom-0 left-0 mx-auto hidden xl:block xl:max-w-[440px] 2xl:hidden  2xl:max-w-[600px]  transition-all duration-1000"
+          className=" absolute top-0 right-0 bottom-0 left-0 mx-auto hidden xl:block xl:max-w-[440px] 2xl:hidden  2xl:max-w-[600px]  transition-all duration-300"
         >
-          <Image src={image_03} alt="algo" className="w-full" />
+          <Image src={image_03} alt="imagem da pagina" className="w-full" />
         </figure>
         <figure
           ref={redLeftImage2}
-          className=" absolute -top-3  right-0 bottom-0 left-0 mx-auto hidden xl:max-w-[440px] 2xl:block 2xl:max-w-[600px]  transition-all duration-1000"
+          className=" absolute -top-3  right-0 bottom-0 left-0 mx-auto hidden xl:max-w-[440px] 2xl:block 2xl:max-w-[600px]  transition-all duration-300"
         >
-          <Image src={image_01} alt="algo" className="w-full" />
+          <Image src={image_01} alt="imagem da pagina" className="w-full" />
         </figure>
         <figure
           ref={redRightImage2}
-          className=" absolute top-0  right-0 bottom-0 left-0 mx-auto hidden  xl:max-w-[440px] 2xl:block 2xl:max-w-[600px]  transition-all duration-1000"
+          className=" absolute top-0  right-0 bottom-0 left-0 mx-auto hidden  xl:max-w-[440px] 2xl:block 2xl:max-w-[600px]  transition-all duration-300"
         >
-          <Image src={image_03} alt="algo" className="w-full" />
+          <Image src={image_03} alt="imagem da pagina" className="w-full" />
         </figure>
       </div>
       <div className="absolute -bottom-[1px] right-0 z-20 hidden w-full xl:block">
