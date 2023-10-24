@@ -28,11 +28,11 @@
   }
 
   .bg-about {
-    background-image: url("../assets/png/background.jpg");
+    background-image: url("../assets/png/background.webp");
   }
 
   .bg-about-data {
-    background-image: url("../assets/png/backgroundBlue.png");
+    background-image: url("../assets/png/backgroundBlue.webp");
   }
 }
 

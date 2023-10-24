@@ -34,12 +34,12 @@ export const DataFooter = [
       },
       {
         href: "#funcionalidades",
-        aria: "Ir para Funcionalidade",
+        aria: "ir para Funcionalidades",
         text: "Funcionalidades"
       },
       {
         href: "https://blog.rizer.com.br/ajuda/",
-        aria: "I para FQA",
+        aria: "Ir para FQA",
         text: "FQA"
       }
     ]

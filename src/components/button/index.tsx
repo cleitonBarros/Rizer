@@ -23,7 +23,7 @@ const button = tv({
     color: {
       default:
         "bg-white text-black hover:bg-slate-50   border-x border-y  border-slate-700",
-      primary: "bg-emerald-600 hover:bg-green-400",
+      primary: "bg-green-700 hover:bg-green-600",
       secondary: "bg-rizer-800 hover:bg-rizer-900"
     }
   },
