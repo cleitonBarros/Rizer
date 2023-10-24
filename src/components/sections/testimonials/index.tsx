@@ -17,7 +17,7 @@ export default function Testimonials() {
       </header>
       <div className="  overflow-hidden w-full   ">
         <menu className=" group gap-0 relative flex items-center justify-center overflow-hidden w-full select-none ">
-          <ul role="marquee"  className=" animate-scroll group-hover:pause flex justify-around gap-0  min-w-fit flex-shrink-0">
+          <ul className=" animate-scroll group-hover:pause flex justify-around gap-0  min-w-fit flex-shrink-0">
             {DataTestimonial.map((data, i) => (
               <Card
                 key={i}
@@ -27,17 +27,7 @@ export default function Testimonials() {
               />
             ))}
           </ul>
-          <ul role="marquee" className=" animate-scroll group-hover:pause flex justify-around gap-0  min-w-fit flex-shrink-0">
-            {DataTestimonial.map((data, i) => (
-              <Card
-                key={i}
-                ocupacao={data.role}
-                name={data.nome}
-                text={data.description}
-              />
-            ))}
-          </ul>
-          <ul role="marquee" className=" animate-scroll group-hover:pause flex justify-around gap-0  min-w-fit flex-shrink-0">
+          <ul className=" animate-scroll group-hover:pause flex justify-around gap-0  min-w-fit flex-shrink-0">
             {DataTestimonial.map((data, i) => (
               <Card
                 key={i}
@@ -49,7 +39,7 @@ export default function Testimonials() {
           </ul>
         </menu>
         <menu className=" group gap-0 relative flex  items-center justify-center overflow-hidden w-full select-none ">
-          <ul role="marquee" className="  animate-scroll_reverse  group-hover:pause flex justify-around gap-0  min-w-fit flex-shrink-0">
+          <ul className="  animate-scroll_reverse  group-hover:pause flex justify-around gap-0  min-w-fit flex-shrink-0">
             {DataTestimonial.map((data, i) => (
               <Card
                 key={i}
@@ -59,7 +49,7 @@ export default function Testimonials() {
               />
             ))}
           </ul>
-          <ul role="marquee" className="  animate-scroll_reverse  group-hover:pause flex justify-around gap-0  min-w-fit flex-shrink-0">
+          <ul className="  animate-scroll_reverse  group-hover:pause flex justify-around gap-0  min-w-fit flex-shrink-0">
             {DataTestimonial.map((data, i) => (
               <Card
                 key={i}
@@ -69,7 +59,7 @@ export default function Testimonials() {
               />
             ))}
           </ul>
-          <ul role="marquee" className="  animate-scroll_reverse  group-hover:pause  flex justify-around gap-0  min-w-fit flex-shrink-0">
+          <ul className="  animate-scroll_reverse  group-hover:pause  flex justify-around gap-0  min-w-fit flex-shrink-0">
             {DataTestimonial.map((data, i) => (
               <Card
                 key={i}
@@ -81,7 +71,7 @@ export default function Testimonials() {
           </ul>
         </menu>
         <menu className="group gap-0 relative flex items-center justify-center overflow-hidden w-full select-none ">
-          <ul role="marquee" className=" animate-scroll group-hover:pause flex justify-around gap-0  min-w-fit flex-shrink-0">
+          <ul className=" animate-scroll group-hover:pause flex justify-around gap-0  min-w-fit flex-shrink-0">
             {DataTestimonial.map((data, i) => (
               <Card
                 key={i}
@@ -91,7 +81,7 @@ export default function Testimonials() {
               />
             ))}
           </ul>
-          <ul role="marquee" className=" animate-scroll group-hover:pause flex justify-around gap-0  min-w-fit flex-shrink-0">
+          <ul className=" animate-scroll group-hover:pause flex justify-around gap-0  min-w-fit flex-shrink-0">
             {DataTestimonial.map((data, i) => (
               <Card
                 key={i}
@@ -101,7 +91,7 @@ export default function Testimonials() {
               />
             ))}
           </ul>
-          <ul role="marquee" className=" animate-scroll group-hover:pause flex justify-around gap-0  min-w-fit flex-shrink-0">
+          <ul className=" animate-scroll group-hover:pause flex justify-around gap-0  min-w-fit flex-shrink-0">
             {DataTestimonial.map((data, i) => (
               <Card
                 key={i}

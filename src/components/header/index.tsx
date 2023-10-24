@@ -46,7 +46,7 @@ export default function Header() {
                   aria-describedby="Login-button"
                   title="Login"
                   href="https://dashboard.rizerapps.com/login"
-                  className="text-xl"
+                  className="text-lg"
                 />
               </li>
             </ul>
@@ -55,7 +55,7 @@ export default function Header() {
               color="primary"
               size="lg"
               rounded="sm"
-              className="min-w-fit text-xl"
+              className="min-w-fit text-lg"
               aria-label="clique para ir para entrar em contato com um especialista"
               aria-describedby="especialista-button"
               title="whatsapp"
