@@ -97,7 +97,6 @@ export default function Footer() {
           role="link"
         >
           <Image
-            role="Landmark"
             className="h-8 md:h-auto w-full"
             src={logo}
             alt="Logo da rizer, um cubo 3D azul e como Rizer à direita"

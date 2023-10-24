@@ -34,7 +34,7 @@ export const DataFooter = [
       },
       {
         href: "#funcionalidades",
-        aria: "Ir para funcionalidade",
+        aria: "Ir para Funcionalidade",
         text: "Funcionalidades"
       },
       {
@@ -74,12 +74,12 @@ export const DataFooter = [
     item: [
       {
         href: "https://dashboard.rizer.com.br/politica-de-privacidade",
-        aria: "Clique para ir saber LGPD",
+        aria: "O que é a LGPD",
         text: "O que é a LGPD ?"
       },
       {
         href: "https://dashboard.rizer.com.br/politica-de-privacidade",
-        aria: "Saber sobre politicas de privacidade",
+        aria: "Saber sobre Política de Privacidade",
         text: "Política de Privacidade"
       },
       {

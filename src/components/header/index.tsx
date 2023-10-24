@@ -16,7 +16,6 @@ export default function Header() {
             title="rizer"
           >
             <Image
-              role="Landmark"
               className="h-8 md:h-auto w-full"
               src={logo}
               alt="Logo da rizer, um cubo 3D azul e como Rizer à direita"
@@ -28,7 +27,7 @@ export default function Header() {
                 <a
                   href="#planos"
                   className="text-lg hover:font-medium "
-                  aria-label="clique nesse link ir a sessão plano se valores"
+                  aria-label="planos e valores"
                   title="planos e valores"
                   role="link"
                 >
@@ -42,7 +41,7 @@ export default function Header() {
                   color="secondary"
                   size="sm"
                   rounded="lg"
-                  aria-label="clique para ir para efetuar o login"
+                  aria-label="Entrar"
                   aria-describedby="Login-button"
                   title="Login"
                   href="https://dashboard.rizerapps.com/login"
@@ -55,8 +54,8 @@ export default function Header() {
               color="primary"
               size="lg"
               rounded="sm"
-              className="min-w-fit text-lg"
-              aria-label="clique para ir para entrar em contato com um especialista"
+              className="min-w-fit text-lg "
+              aria-label="Fale com um especialista"
               aria-describedby="especialista-button"
               title="whatsapp"
               href="https://web.whatsapp.com/send/?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20da%20Rizer!"
