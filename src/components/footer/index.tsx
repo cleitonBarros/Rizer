@@ -28,7 +28,13 @@ export default function Footer() {
                   className="transition-all duration-1000 delay-50 ease-in-out hover:bg-rizer-200 rounded-md px-2"
                   key={i}
                 >
-                  <Link href={item.href} aria-label={item.aria} target="_blank">
+                  <Link
+                    role="link"
+                    href={item.href}
+                    aria-label={item.aria}
+                    title={item.text}
+                    target="_blank"
+                  >
                     {item.text}
                   </Link>
                 </li>
@@ -44,6 +50,7 @@ export default function Footer() {
         <ul className="flex justify-center items-center gap-8 sm:gap-12 text-2xl text-white">
           <li title="facebook" className=" rounded-md px-2">
             <Link
+              role="link"
               target="_blank"
               href="https://www.facebook.com/rizersistemas"
               aria-label="clique para ir para pagina no facebook"
@@ -53,6 +60,7 @@ export default function Footer() {
           </li>
           <li title="instagram" className=" rounded-md px-2">
             <Link
+              role="link"
               target="_blank"
               href="https://www.instagram.com/rizersistemas"
               aria-label="clique para ir para pagina no instagram"
@@ -62,6 +70,7 @@ export default function Footer() {
           </li>
           <li title="youtube" className=" rounded-md px-2">
             <Link
+              role="link"
               target="_blank"
               href="https://www.youtube.com/@rizersistemas"
               aria-label="clique para ir para o canal no youtube"
@@ -71,6 +80,7 @@ export default function Footer() {
           </li>
           <li title="whatapp" className=" rounded-md px-2">
             <Link
+              role="link"
               target="_blank"
               href="https://web.whatsapp.com/send/?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20da%20Rizer!"
               aria-label="clique para ir para o whataspp"
@@ -82,15 +92,15 @@ export default function Footer() {
         <a
           href="#"
           aria-label="clique para ir ao topo da pagina"
+          title="rizer"
           className=" w-40 h-auto text-white"
+          role="link"
         >
           <Image
+            role="Landmark"
             className="h-8 md:h-auto w-full"
             src={logo}
-            role="logo"
             alt="Logo da rizer, um cubo 3D azul e como Rizer à direita"
-            aria-label="clique para ir ao topo da pagina"
-            title="rizer"
           />
         </a>
       </div>

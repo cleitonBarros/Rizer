@@ -38,6 +38,7 @@ export default function Planos() {
                 <Button
                   className="text-2xl"
                   text="Contratar"
+                  href="https://dashboard.rizerapps.com/login"
                   size="xlg"
                   rounded="md"
                 />
@@ -92,6 +93,7 @@ export default function Planos() {
                 <Button
                   className="text-2xl"
                   text="Contratar"
+                  href="https://dashboard.rizerapps.com/login"
                   size="xlg"
                   rounded="md"
                 />
@@ -145,6 +147,7 @@ export default function Planos() {
                 <Button
                   className="text-2xl"
                   text="Contratar"
+                  href="https://dashboard.rizerapps.com/login"
                   size="xlg"
                   rounded="md"
                 />
@@ -173,7 +176,7 @@ export default function Planos() {
                 <BiCheck color="DarkGreen" />
                 <span>Domínio Personalizado</span>
               </li>
-              
+
               <li className="flex justify-center items-center gap-2 text-lg text-black font-medium font-inter">
                 <BiCheck color="DarkGreen" />
                 <span>Servidor SMTP</span>
@@ -195,7 +198,6 @@ export default function Planos() {
                 <span>Notas Fiscais de Serviços</span>
               </li>
             </ul>
-
           </div>
         </article>
 
@@ -216,6 +218,7 @@ export default function Planos() {
                 <Button
                   className="text-2xl"
                   text="Contratar"
+                  href="https://dashboard.rizerapps.com/login"
                   size="xlg"
                   rounded="md"
                 />

@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useRef } from "react";
-import image_01 from "../../../assets/png/image_01.png";
-import image_02 from "../../../assets/png/image_02.png";
-import image_03 from "../../../assets/png/image_03.png";
+import image_01 from "../../../assets/png/image_01.webp";
+import image_02 from "../../../assets/png/image_02.webp";
+import image_03 from "../../../assets/png/image_03.webp";
 import Image from "next/image";
 
 export default function Animation() {
@@ -13,14 +13,11 @@ export default function Animation() {
     redRightImage2 = useRef<any>("");
 
   useEffect(() => {
-    setTimeout(() => {
-      refMiddleImage.current.classList.add("img-middle");
-      redLeftImage.current.classList.add("img-slide-left");
-      redRightImage.current.classList.add("img-slide-right");
-      redLeftImage2.current.classList.add("img-slide-left-2");
-      redRightImage2.current.classList.add("img-slide-right-2");
-
-    }, 200);
+    refMiddleImage.current.classList.add("img-middle");
+    redLeftImage.current.classList.add("img-slide-left");
+    redRightImage.current.classList.add("img-slide-right");
+    redLeftImage2.current.classList.add("img-slide-left-2");
+    redRightImage2.current.classList.add("img-slide-right-2");
   }, []);
 
   return (
@@ -40,7 +37,7 @@ export default function Animation() {
         </div>
         <figure
           ref={redLeftImage}
-          className=" absolute -top-3  right-0 bottom-0 left-0 mx-auto hidden xl:block xl:max-w-[440px] 2xl:hidden 2xl:max-w-[600px] tr   transition-all duration-1000"
+          className=" absolute -top-3  right-0 bottom-0 left-0 mx-auto hidden xl:block xl:max-w-[440px] 2xl:hidden 2xl:max-w-[600px] transition"
         >
           <Image src={image_01} alt="algo" className="w-full" />
         </figure>

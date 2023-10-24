@@ -8,14 +8,18 @@ export default function Header() {
     <>
       <header className="flex justify-center items-center w-full h-auto shadow shadow-slate-100  border-b">
         <nav className="flex justify-between items-center w-full max-w-screen-2xl  p-4 ">
-          <a href="\" className="w-24 md:w-32 h-auto">
+          <a
+            role="link"
+            href="#"
+            className="w-24 md:w-32 h-auto"
+            aria-label="clique para ir ao topo da pagina"
+            title="rizer"
+          >
             <Image
+              role="Landmark"
               className="h-8 md:h-auto w-full"
               src={logo}
-              role="Logo"
               alt="Logo da rizer, um cubo 3D azul e como Rizer à direita"
-              aria-label="clique para ir ao topo da pagina"
-              title="rizer"
             />
           </a>
           <div className=" hidden md:flex justify-end items-center gap-8 w-full">
@@ -26,12 +30,14 @@ export default function Header() {
                   className="text-lg hover:font-medium "
                   aria-label="clique nesse link ir a sessão plano se valores"
                   title="planos e valores"
+                  role="link"
                 >
                   Planos e valores
                 </a>
               </li>
               <li>
                 <Button
+                  role="link"
                   text="Entrar"
                   color="secondary"
                   size="sm"
@@ -57,7 +63,6 @@ export default function Header() {
           </div>
         </nav>
       </header>
-      
     </>
   );
 }

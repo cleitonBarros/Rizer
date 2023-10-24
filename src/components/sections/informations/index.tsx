@@ -15,8 +15,8 @@ import TI from "../../../assets/png/TI.jpg";
 import Logistic from "../../../assets/png/logistic.jpg";
 import Education from "../../../assets/png/education.jpg";
 import varejo from "../../../assets/png/varejo.jpg";
-import Saude from "../../../assets/png/estetoscopio.jpg"
-import services from "../../../assets/png/services.jpg"
+import Saude from "../../../assets/png/estetoscopio.jpg";
+import services from "../../../assets/png/services.jpg";
 
 export default function Information() {
   return (
@@ -35,6 +35,7 @@ export default function Information() {
             size="xlg"
             text="Criar projeto"
             color="secondary"
+            href="https://dashboard.rizerapps.com/login"
           />
         </hgroup>
       </header>
@@ -113,8 +114,17 @@ export default function Information() {
           </p>
         </hgroup>
 
-        <video controls className=" rounded-xl  xl:max-w-screen-lg aspect-video">
+        <video
+          controls
+          className=" rounded-xl  xl:max-w-screen-lg aspect-video"
+        >
           <source src="./video.mp4" type="video/mp4" />
+          <track
+            src=""
+            kind="captions"
+            srcLang="pt"
+            label="portugues_captions"
+          ></track>
         </video>
 
         <Button size="xlg" color="primary" text="Ir aos primeiros passos" />
@@ -133,27 +143,27 @@ export default function Information() {
             src={Logistic}
             alt="imagem vista de cima de uma galpão"
           />
-           <CardClient
+          <CardClient
             title="Serviços"
             src={services}
             alt="imagem de uma cafeteira"
           />
-           <CardClient
+          <CardClient
             title="Varejo"
             src={varejo}
             alt="imagem de roupas em fila"
           />
-           <CardClient
+          <CardClient
             title="Educação"
             src={Education}
             alt="imagem com varios materias escolares, como esquadro, tinta guache, colar, borrachas, clipes, caderno e um tablet sobra um mesa de madeira"
           />
-           <CardClient
+          <CardClient
             title="TI"
             src={TI}
             alt="imagem de um tela de computador com codigos"
           />
-           <CardClient
+          <CardClient
             title="Saúde"
             src={Saude}
             alt="Imagens de um estetoscopio verde sobre documentodos e um caneta azul ao fundo"

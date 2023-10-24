@@ -1,6 +1,4 @@
 import { Card } from "@/components/cards";
-import image_02 from "../../../assets/png/ezgif.com-video-to-gif.gif";
-import image_04 from "../../../assets/png/gif_2.gif";
 import image_03 from "../../../assets/png/image 2.png";
 import image_01 from "../../../assets/svg/chatgpt-icon 1.svg";
 import Button from "../../button";
@@ -48,8 +46,17 @@ export default function About() {
           text_2=" São centenas de tipos de campos e formulários inteligentes para
           você escolher e tornar o seu sistema ainda mais ágil."
           className=" items-start flex-col md:col-span-2 lg:col-span-2 "
-          img={image_02}
-        />
+        >
+          <video autoPlay loop muted playsInline>
+            <source src="./TableInteligent.mp4" type="video/mp4" />
+            <track
+              src=""
+              kind="captions"
+              srcLang="pt"
+              label="portugues_captions"
+            ></track>
+          </video>
+        </Card>
         <Card
           title="Criar sua conta é gratuito !"
           icon={<PiUserCirclePlusLight size={64} />}
@@ -98,10 +105,17 @@ export default function About() {
             </li>
           </ul>
         </Card>
-        <Card
-          className="  hidden sm:flex flex-col md:col-span-2 lg:col-span-3 text-center"
-          img={image_04}
-        />
+        <Card className="  hidden sm:flex flex-col md:col-span-2 lg:col-span-3 text-center">
+          <video autoPlay loop muted playsInline>
+            <source src="./criarSistema.mp4" type="video/mp4" />
+            <track
+              src=""
+              kind="captions"
+              srcLang="pt"
+              label="portugues_captions"
+            ></track>
+          </video>
+        </Card>
       </article>
       <Button
         text="Conhecer mais"
@@ -109,6 +123,7 @@ export default function About() {
         rounded="xl"
         color="secondary"
         className="text-lg"
+        href="https://rizer.com.br/primeiros-passos"
       />
     </Section>
   );
