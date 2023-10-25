@@ -17,7 +17,6 @@ import {
 import logo from "../../assets/svg/rizer-sistemas.svg";
 
 import Image from "next/image";
-import Link from "next/link";
 
 export default function SheetDemo() {
   return (
@@ -37,7 +36,7 @@ export default function SheetDemo() {
       <SheetContent className="md:hidden  bg-slate-100 " side="left">
         <SheetHeader>
           <SheetTitle className="mb-10">
-            <Link
+            <a
               role="link"
               href="#"
               className="w-24 md:w-32 h-auto"
@@ -49,7 +48,7 @@ export default function SheetDemo() {
                 src={logo}
                 alt="Logo da rizer, um cubo 3D azul e como Rizer à direita"
               />
-            </Link>
+            </a>
           </SheetTitle>
           <SheetDescription>
             <ul className="flex flex-col justify-center items-center gap-6">
