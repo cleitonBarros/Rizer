@@ -3,7 +3,7 @@ import Section from "../../container";
 
 export default function Contact() {
   return (
-    <Section backgroundColor="primary">
+    <Section id="contact" backgroundColor="primary">
       <article className="flex flex-col justify-center items-center  w-full max-w-screen-2xl h-96 gap-12  ">
         <div className=" text-3xl md:text-4xl font-suisse font-semibold  text-white text-center flex flex-col gap-4">
           <h2>Nossos clientes são mais que clientes. São parceiros.</h2>

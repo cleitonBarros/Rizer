@@ -1,5 +1,6 @@
 import logo from "../../assets/svg/rizer-sistemas.svg";
 import Button from "../button";
+import SheetSide from "../sidebar";
 
 import Image from "next/image";
 
@@ -62,6 +63,7 @@ export default function Header() {
             />
           </div>
         </nav>
+        <SheetSide />
       </header>
     </>
   );

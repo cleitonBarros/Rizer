@@ -10,17 +10,17 @@ import Image from "next/image";
 
 export default function Animation() {
   const refMiddleImage = useRef<HTMLImageElement>(null!),
-    redLeftImage = useRef<HTMLImageElement>(null!),
-    redRightImage = useRef<HTMLImageElement>(null!),
-    redLeftImage2 = useRef<HTMLImageElement>(null!),
-    redRightImage2 = useRef<HTMLImageElement>(null!);
+    refLeftImage = useRef<HTMLImageElement>(null!),
+    refRightImage = useRef<HTMLImageElement>(null!),
+    refLeftImage2 = useRef<HTMLImageElement>(null!),
+    refRightImage2 = useRef<HTMLImageElement>(null!);
 
   useEffect(() => {
     refMiddleImage.current.classList.add("img-middle");
-    redLeftImage.current.classList.add("img-slide-left");
-    redRightImage.current.classList.add("img-slide-right");
-    redLeftImage2.current.classList.add("img-slide-left-2");
-    redRightImage2.current.classList.add("img-slide-right-2");
+    refLeftImage.current.classList.add("img-slide-left");
+    refRightImage.current.classList.add("img-slide-right");
+    refLeftImage2.current.classList.add("img-slide-left-2");
+    refRightImage2.current.classList.add("img-slide-right-2");
   }, []);
 
   return (
@@ -39,25 +39,25 @@ export default function Animation() {
           </figure>
         </div>
         <figure
-          ref={redLeftImage}
+          ref={refLeftImage}
           className=" absolute -top-3  right-0 bottom-0 left-0 mx-auto hidden xl:block xl:max-w-[440px] 2xl:hidden 2xl:max-w-[600px] transition-all duration-300"
         >
           <Image src={image_01} alt="imagem da pagina " className="w-full" />
         </figure>
         <figure
-          ref={redRightImage}
+          ref={refRightImage}
           className=" absolute top-0 right-0 bottom-0 left-0 mx-auto hidden xl:block xl:max-w-[440px] 2xl:hidden  2xl:max-w-[600px]  transition-all duration-300"
         >
           <Image src={image_03} alt="imagem da pagina" className="w-full" />
         </figure>
         <figure
-          ref={redLeftImage2}
+          ref={refLeftImage2}
           className=" absolute -top-3  right-0 bottom-0 left-0 mx-auto hidden xl:max-w-[440px] 2xl:block 2xl:max-w-[600px]  transition-all duration-300"
         >
           <Image src={image_01} alt="imagem da pagina" className="w-full" />
         </figure>
         <figure
-          ref={redRightImage2}
+          ref={refRightImage2}
           className=" absolute top-0  right-0 bottom-0 left-0 mx-auto hidden  xl:max-w-[440px] 2xl:block 2xl:max-w-[600px]  transition-all duration-300"
         >
           <Image src={image_03} alt="imagem da pagina" className="w-full" />

@@ -7,7 +7,10 @@ import Image from "next/image";
 export default function AboutUs() {
   return (
     <>
-      <Section className=" bg-about bg-cover bg-no-repeat bg-center pb-7.5 pt-6.25">
+      <Section
+        id="about"
+        className=" bg-about bg-cover bg-no-repeat bg-center pb-7.5 pt-6.25"
+      >
         <header className="max-w-[910px] mx-auto">
           <hgroup>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-onest font-normal text-white text-center ">
