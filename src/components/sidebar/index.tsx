@@ -3,6 +3,7 @@ import { BiMenuAltRight } from "react-icons/bi";
 
 import Btn from "../../components/button";
 import { Button } from "@/components/ui/button";
+import { NavigationMenuLink } from "@/components/ui/navigation-menu";
 import {
   Sheet,
   SheetClose,
@@ -16,19 +17,27 @@ import {
 import logo from "../../assets/svg/rizer-sistemas.svg";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SheetDemo() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="ghost" className="mr-4 md:hidden">
+        <Button
+          variant="ghost"
+          className="mr-4 md:hidden"
+          role="link"
+          aria-label="botão sidebar"
+          aria-describedby="bidebar-button"
+          title="botão sidebar"
+        >
           <BiMenuAltRight size={28} />
         </Button>
       </SheetTrigger>
       <SheetContent className="md:hidden  bg-slate-100 " side="left">
         <SheetHeader>
           <SheetTitle className="mb-10">
-            <a
+            <Link
               role="link"
               href="#"
               className="w-24 md:w-32 h-auto"
@@ -40,12 +49,12 @@ export default function SheetDemo() {
                 src={logo}
                 alt="Logo da rizer, um cubo 3D azul e como Rizer à direita"
               />
-            </a>
+            </Link>
           </SheetTitle>
           <SheetDescription>
             <ul className="flex flex-col justify-center items-center gap-6">
               <li>
-                <a
+                <NavigationMenuLink
                   href="#about"
                   className="text-2xl hover:font-medium "
                   aria-label="sobre nos"
@@ -53,10 +62,10 @@ export default function SheetDemo() {
                   role="link"
                 >
                   Sobre nós
-                </a>
+                </NavigationMenuLink>
               </li>
               <li>
-                <a
+                <NavigationMenuLink
                   href="#planos"
                   className="text-2xl hover:font-medium "
                   aria-label="planos e valores"
@@ -64,7 +73,7 @@ export default function SheetDemo() {
                   role="link"
                 >
                   Planos e valores
-                </a>
+                </NavigationMenuLink>
               </li>
               <li>
                 <SheetClose asChild>
