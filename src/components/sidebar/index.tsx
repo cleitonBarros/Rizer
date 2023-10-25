@@ -3,7 +3,6 @@ import { BiMenuAltRight } from "react-icons/bi";
 
 import Btn from "../../components/button";
 import { Button } from "@/components/ui/button";
-import { NavigationMenuLink } from "@/components/ui/navigation-menu";
 import {
   Sheet,
   SheetClose,
@@ -53,7 +52,7 @@ export default function SheetDemo() {
           <SheetDescription>
             <ul className="flex flex-col justify-center items-center gap-6">
               <li>
-                <NavigationMenuLink
+                <a
                   href="#about"
                   className="text-2xl hover:font-medium "
                   aria-label="sobre nos"
@@ -61,10 +60,10 @@ export default function SheetDemo() {
                   role="link"
                 >
                   Sobre nós
-                </NavigationMenuLink>
+                </a>
               </li>
               <li>
-                <NavigationMenuLink
+                <a
                   href="#planos"
                   className="text-2xl hover:font-medium "
                   aria-label="planos e valores"
@@ -72,7 +71,7 @@ export default function SheetDemo() {
                   role="link"
                 >
                   Planos e valores
-                </NavigationMenuLink>
+                </a>
               </li>
               <li>
                 <SheetClose asChild>
