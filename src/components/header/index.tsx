@@ -78,8 +78,9 @@ export default function Header() {
             />
           </div>
           <button
+            name="menu hambuguer"
             className="md:hidden"
-            title="menu"
+            title="menu hambuguer"
             role="link"
             aria-label="menu hamburguer"
           >
