@@ -3,9 +3,9 @@
 import { Dispatch, SetStateAction, useEffect } from "react";
 
 import logo from "../../assets/svg/Logo.svg";
-import { UseWindowSize } from "../../hook/useWidthSize";
 import Button from "../button";
 
+import { useWindowSize } from "@/hook/useWidthSize";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,7 +18,7 @@ export default function Side({ Open, close }: MenuProps) {
   function closeMenu() {
     close(!Open);
   }
-  const [width] = UseWindowSize();
+  const { width } = useWindowSize();
 
   useEffect(() => {
     if (width >= 765) {
@@ -82,7 +82,7 @@ export default function Side({ Open, close }: MenuProps) {
               className="text-lg"
             />
           </li>
-          <li>
+          <li onClick={closeMenu}>
             <Button
               text="Falar com especialista"
               color="primary"
@@ -92,7 +92,7 @@ export default function Side({ Open, close }: MenuProps) {
               aria-label="Falar com especialista"
               aria-describedby="especialista-button"
               title="whatsapp"
-              href="https://web.whatsapp.com/send/?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20da%20Rizer!"
+              href="#contact"
             />
           </li>
         </ul>
