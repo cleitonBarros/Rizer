@@ -1,4 +1,5 @@
-import { BsWhatsapp } from "react-icons/bs";
+"use client";
+import { BsArrowUpCircleFill, BsWhatsapp } from "react-icons/bs";
 
 import Button from "../components/button";
 import Footer from "../components/footer";
@@ -15,6 +16,9 @@ import Templates from "../components/sections/templates";
 import Testimonials from "../components/sections/testimonials";
 
 export default function Home() {
+  const scrollTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <>
       <Header />
@@ -31,6 +35,18 @@ export default function Home() {
         <Testimonials />
       </main>
       <Footer />
+
+      <button
+        className="fixed   right-6 sm:right-24  bottom-24 sm:bottom-5 z-10 rounded-full"
+        aria-label="Ir ao topo"
+        aria-describedby="ir ao topo"
+        title="ir ao topo"
+        onClick={scrollTop}
+        role="link"
+      >
+        <BsArrowUpCircleFill size={32} color={"blue"} />
+      </button>
+
       <Button
         className="fixed right-4 bottom-4 z-10"
         icon={<BsWhatsapp size={40} />}

@@ -34,19 +34,21 @@ export default function Side({ Open, close }: MenuProps) {
     >
       <nav className="flex justify-center items-center px-4 py-0">
         <ul className="flex justify-center flex-col items-center gap-8">
-          <a
-            role="link"
-            href="#"
-            className="w-28 h-auto mb-8"
-            aria-label="clique para ir ao topo da pagina"
-            title="rizer"
-          >
-            <Image
-              className="h-8 md:h-auto w-full"
-              src={logo}
-              alt="Logo da rizer, um cubo 3D azul e como Rizer à direita"
-            />
-          </a>
+          <li>
+            <a
+              role="link"
+              href="#"
+              className="w-28 h-auto mb-8"
+              aria-label="clique para ir ao topo da pagina"
+              title="rizer"
+            >
+              <Image
+                className="h-8 md:h-auto w-full"
+                src={logo}
+                alt="Logo da rizer, um cubo 3D azul e como Rizer à direita"
+              />
+            </a>
+          </li>
           <li onClick={closeMenu}>
             <Link
               href="#about"
