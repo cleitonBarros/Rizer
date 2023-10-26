@@ -1,10 +1,25 @@
+"use client";
+import { useState } from "react";
+
 import logo from "../../assets/svg/rizer-sistemas.svg";
 import Button from "../button";
-import SheetSide from "../sidebar";
+import Side from "../side";
 
+import { Spin as Hamburger } from "hamburger-react";
 import Image from "next/image";
 
 export default function Header() {
+  const [isOpen, setOpen] = useState<boolean>(false);
+  <Hamburger
+    onToggle={(toggled) => {
+      if (toggled) {
+        setOpen(true);
+        return;
+      } else {
+        setOpen(false);
+      }
+    }}
+  />;
   return (
     <>
       <header className="flex justify-center items-center w-full h-auto shadow shadow-slate-100  border-b">
@@ -55,15 +70,29 @@ export default function Header() {
               color="primary"
               size="lg"
               rounded="sm"
-              className="min-w-fit text-lg "
+              className="min-w-fit text-lg  "
               aria-label="Fale com um especialista"
               aria-describedby="especialista-button"
               title="whatsapp"
               href="https://web.whatsapp.com/send/?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20da%20Rizer!"
             />
           </div>
+          <button
+            className="md:hidden"
+            title="menu"
+            role="link"
+            aria-label="menu hamburguer"
+          >
+            <Hamburger
+              toggled={isOpen}
+              toggle={setOpen}
+              color="#000"
+              size={32}
+              duration={0.5}
+            />
+          </button>
         </nav>
-        <SheetSide />
+        <Side Open={isOpen} close={setOpen} />
       </header>
     </>
   );
