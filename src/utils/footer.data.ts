@@ -3,7 +3,7 @@ export const DataFooter = [
     name: "A rizer",
     item: [
       {
-        href: "https://web.whatsapp.com/send/?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20da%20Rizer!",
+        href: "https://api.whatsapp.com/send?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20rizer%20!",
         aria: "Ir ao contato",
         text: "Contato"
       },
@@ -48,17 +48,17 @@ export const DataFooter = [
     name: "Planos",
     item: [
       {
-        href: "https://www.google.com.br/",
+        href: "#planos",
         aria: "Plano Prossional",
         text: "Prossional"
       },
       {
-        href: "https://www.google.com.br/",
+        href: "#planos",
         aria: "Plano PME",
         text: "PME"
       },
       {
-        href: "https://www.google.com.br/",
+        href: "#planos",
         aria: "Planos startup",
         text: " Startup"
       },
@@ -93,52 +93,52 @@ export const DataFooter = [
     name: "Outros serviços",
     item: [
       {
-        href: "https://web.whatsapp.com/send/?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20da%20Rizer!",
+        href: "https://api.whatsapp.com/send?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20rizer%20!",
         aria: "Criação de sistema personalizado",
         text: "Criação de sistema personalizado"
       },
       {
-        href: "https://web.whatsapp.com/send/?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20da%20Rizer!",
+        href: "https://api.whatsapp.com/send?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20rizer%20!",
         aria: "Recrutamento e Seleção de desenvolvedores",
         text: "Recrutamento e Seleção de desenvolvedores"
       },
       {
-        href: "https://web.whatsapp.com/send/?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20da%20Rizer!",
+        href: "https://api.whatsapp.com/send?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20rizer%20!",
         aria: "Migração de hospedagem",
         text: "Migração de hospedagem"
       },
       {
-        href: "https://web.whatsapp.com/send/?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20da%20Rizer!",
+        href: "https://api.whatsapp.com/send?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20rizer%20!",
         aria: "Criação de aplicativos",
         text: "Criação de aplicativos"
       },
       {
-        href: "https://web.whatsapp.com/send/?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20da%20Rizer!",
+        href: "https://api.whatsapp.com/send?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20rizer%20!",
         aria: "Programa de Conscientização em cibersegurança",
         text: "Programa de Conscientização em cibersegurança"
       },
       {
-        href: "https://web.whatsapp.com/send/?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20da%20Rizer!",
+        href: "https://api.whatsapp.com/send?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20rizer%20!",
         aria: "Consultoria em Tecnologia da Informação",
         text: "Consultoria em Tecnologia da Informação"
       },
       {
-        href: "https://web.whatsapp.com/send/?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20da%20Rizer!",
+        href: "https://api.whatsapp.com/send?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20rizer%20!",
         aria: "Consultoria em Gestão Empresarial",
         text: "Consultoria em Gestão Empresarial"
       },
       {
-        href: "https://web.whatsapp.com/send/?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20da%20Rizer!",
+        href: "https://api.whatsapp.com/send?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20rizer%20!",
         aria: "Migração para nuvem",
         text: "Migração para nuvem"
       },
       {
-        href: "https://web.whatsapp.com/send/?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20da%20Rizer!",
+        href: "https://api.whatsapp.com/send?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20rizer%20!",
         aria: "Hospedagem em VPS Dedicada",
         text: "Hospedagem em VPS Dedicada"
       },
       {
-        href: "https://web.whatsapp.com/send/?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20da%20Rizer!",
+        href: "https://api.whatsapp.com/send?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20rizer%20!",
         aria: "Criação de sites, aplicativos, Intranet, CRM, ERP e portais",
         text: "Criação de sites, aplicativos, Intranet, CRM, ERP e portais"
       }

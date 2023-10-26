@@ -40,7 +40,7 @@ export default function Home() {
         aria-label="clique para ir para whatapp"
         aria-describedby="whatapp-button"
         title="whatsapp"
-        href="https://web.whatsapp.com/send/?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20da%20Rizer!"
+        href="https://api.whatsapp.com/send?phone=5571992301699&text=Quero%20falar%20com%20um%20especialista%20rizer%20!"
       />
     </>
   );
