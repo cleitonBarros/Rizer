@@ -6,12 +6,12 @@ const button = tv({
   base: " flex justify-center items-center text-white font-medium transition-all duration-300 hover:scale-105 font-suisse cursor-pointer",
   variants: {
     size: {
-      null: "h-16 w-16",
-      xs: "h-16 w-16 py-3 px-6",
-      sm: "h-10 w-24 py-3 px-6",
-      md: "h-10 w-32 py-3 px-6",
-      lg: "h-10 w-60 py-3 px-6",
-      xlg: "h-16 w-60 py-3 px-6"
+      null: "h-16 w-full max-w-[4rem]",
+      xs: "h-16 w-full max-w-[4rem] py-3 px-6",
+      sm: "h-10 w-full max-w-[6rem] py-3 px-6",
+      md: "h-10 w-full max-w-[8rem] py-3 px-6",
+      lg: "h-10 w-full max-w-[15rem] py-3 px-6",
+      xlg: "h-16 w-full max-w-[15rem] py-3 px-6"
     },
     rounded: {
       null: "",
