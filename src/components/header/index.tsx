@@ -85,6 +85,7 @@ export default function Header() {
             aria-label="menu hamburguer"
           >
             <Hamburger
+              aria-label="menu hamburguer"
               toggled={isOpen}
               toggle={setOpen}
               color="#000"
